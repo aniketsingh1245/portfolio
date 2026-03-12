@@ -164,13 +164,7 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* How to add projects hint */}
-        <div className="reveal mb-12 flex items-start gap-3 px-4 py-3 rounded-lg bg-accent/5 border border-accent/10">
-          <span className="text-accent mt-0.5">💡</span>
-          <p className="text-muted text-xs leading-relaxed font-mono">
-            To add/remove/edit projects, modify <span className="text-accent">src/data/projects.js</span> — no other files need to change.
-          </p>
-        </div>
+ 
 
         {/* Projects grid */}
         {projects.length === 0 ? (

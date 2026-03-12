@@ -1,77 +1,68 @@
-/**
- * projects.js — Single source of truth for all portfolio projects.
- *
- * ─────────────────────────────────────────────────────────────────────
- *  HOW TO ADD / EDIT / REMOVE PROJECTS
- * ─────────────────────────────────────────────────────────────────────
- *
- *  ADD:    Copy one object block, paste at the end of the array, fill in your details.
- *  EDIT:   Change any field value in the corresponding object.
- *  REMOVE: Delete the entire object block (including the surrounding { }).
- *
- *  Fields:
- *    title       (string)   — Project name shown as the card heading.
- *    description (string)   — Short paragraph description shown on the card.
- *    tech        (string[]) — Array of tech/tool names rendered as pill tags.
- *    github      (string)   — Full GitHub URL. Use "" to hide the button.
- *    demo        (string)   — Live demo URL. Use "" to hide the button.
- *    image       (string)   — Path relative to /public, e.g. "/images/fraud.png".
- *                             Use "" to show the default gradient placeholder.
- *    featured    (boolean)  — Optional. Set true to show a "Featured" badge.
- *    status      (string)   — Optional. e.g. "Live", "In Progress", "Archived".
- *    tagColor    (string)   — Optional. "blue" | "green" | "amber" | "pink"
- *                             Controls the color of the tech pill tags.
- * ─────────────────────────────────────────────────────────────────────
- */
-
 export const projects = [
   {
     title: "AI Fraud Detection System",
-    description:
-      "End-to-end machine learning pipeline that detects financial fraud in real time. Features a FastAPI backend serving a trained Scikit-learn model with sub-100ms prediction latency, interactive REST API docs, and a dashboard for monitoring transaction anomalies.",
+    description: "End-to-end machine learning pipeline that detects financial fraud in real time. Features a FastAPI backend serving a trained Scikit-learn model with sub-100ms prediction latency, interactive REST API docs, and a dashboard for monitoring transaction anomalies.",
     tech: ["Python", "FastAPI", "Scikit-learn", "Pandas", "Docker", "SQL"],
-    github: "https://github.com/aniketsingh1245/ai-fraud-detection-system",
+    github: "https://github.com/aniketsingh1245/ai-fraud-detection",
     demo: "",
-    image: "/images/fraud.png",
+    image: "",
     featured: true,
     status: "Live",
     tagColor: "blue",
   },
   {
     title: "Scuba Diving Web Platform",
-    description:
-      "Full-stack platform connecting divers with dive sites worldwide. Built with React on the frontend and Flask on the backend, featuring dynamic location data, user authentication, site reviews, and real-time conditions pulled from weather APIs.",
+    description: "Full-stack platform connecting divers with dive sites worldwide. Built with React on the frontend and Flask on the backend, featuring dynamic location data, user authentication, site reviews, and real-time conditions pulled from weather APIs.",
     tech: ["React", "Flask", "Python", "PostgreSQL", "Tailwind CSS", "REST API"],
-    github: "https://github.com/aniketsingh1245/scuba-app",
+    github: "https://github.com/aniketsingh1245/scuba-platform",
     demo: "",
-    image: "/images/scuba.png",
+    image: "",
     featured: true,
-    status: "In Progress",
+    status: "Live",
     tagColor: "green",
   },
   {
     title: "Jarvis AI Assistant",
-    description:
-      "JARVIS-inspired AI voice assistant for desktop automation. Uses speech recognition and pyttsx3 TTS to accept voice commands, control system settings, open applications, search the web, and answer questions via an integrated language model.",
+    description: "JARVIS-inspired AI voice assistant for desktop automation. Uses speech recognition and pyttsx3 TTS to accept voice commands, control system settings, open applications, search the web, and answer questions via an integrated language model.",
     tech: ["Python", "OpenAI API", "Speech Recognition", "pyttsx3", "Tkinter"],
-    github: "https://github.com/aniketsingh1245/toxic-ai-jarvis-assistant",
+    github: "https://github.com/aniketsingh1245/jarvis-ai",
     demo: "",
-    image: "/images/jarvis.png",
+    image: "",
     featured: false,
     status: "Live",
     tagColor: "pink",
   },
-
-  // ─── PASTE NEW PROJECTS BELOW THIS LINE ────────────────────────────
-  // {
-  //   title: "Your New Project",
-  //   description: "A short description of what this project does.",
-  //   tech: ["React", "Node.js", "MongoDB"],
-  //   github: "https://github.com/yourusername/new-project",
-  //   demo: "https://your-demo.vercel.app",
-  //   image: "/images/new-project.png",
-  //   featured: false,
-  //   status: "Live",
-  //   tagColor: "amber",
-  // },
-];
+  {
+    title: "Unemployment Predictor",
+    description: "Machine learning model that predicts unemployment trends using socioeconomic indicators. Built with Python and Scikit-learn, the model analyses historical data to forecast employment rates and identify key contributing factors.",
+    tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
+    github: "https://github.com/aniketsingh1245/Unemplyee_predict",
+    demo: "",
+    image: "",
+    featured: false,
+    status: "Live",
+    tagColor: "amber",
+  },
+  {
+    title: "DNA Sequence Analyser",
+    description: "Bioinformatics tool for analysing and processing DNA sequences. Performs sequence alignment, pattern recognition, and genetic data visualisation using Python-based computational biology techniques.",
+    tech: ["Python", "BioPython", "Pandas", "NumPy", "Matplotlib"],
+    github: "https://github.com/aniketsingh1245/DNA",
+    demo: "",
+    image: "",
+    featured: false,
+    status: "Live",
+    tagColor: "green",
+  },
+  {
+    title: "Tweet Sentiment Analyser",
+    description: "NLP-powered sentiment analysis tool for Twitter data. Classifies tweets as positive, negative, or neutral using machine learning and natural language processing techniques, with data visualisation of sentiment trends.",
+    tech: ["Python", "NLP", "NLTK", "TextBlob", "Scikit-learn", "Matplotlib"],
+    github: "https://github.com/aniketsingh1245/Tweet_Twitter",
+    demo: "",
+    image: "",
+    featured: false,
+    status: "Live",
+    tagColor: "blue",
+  },
+]
