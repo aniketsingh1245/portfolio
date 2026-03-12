@@ -100,11 +100,7 @@ export default function Resume() {
                   View in Browser
                 </a>
 
-                <p className="text-muted text-xs font-mono leading-relaxed">
-                  📁 To update resume:
-                  <br />replace <span className="text-accent">public/resume/</span>
-                  <br /><span className="text-accent">AniketSinghResume.pdf</span>
-                </p>
+                
 
               </div>
             </div>
