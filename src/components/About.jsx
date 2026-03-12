@@ -117,15 +117,17 @@ export default function About() {
             </div>
             <div className="flex-1">
               <p className="section-label text-xs mb-1">Education</p>
-              <h3 className="font-display font-bold text-text text-xl">Vellore Institute of Technology (VIT), Bhopal</h3>
+              <h3 className="font-display font-bold text-text text-xl">Vellore Institute of Technology (VIT), Bhopal(2021 – 2025)</h3>
               <p className="text-text text-sm mt-1 font-semibold">B.Tech — Computer Science Engineering</p>
               <p className="text-accent font-mono text-sm mt-0.5">Specialisation: Cloud Computing & Automation</p>
-              <p className="text-muted text-xs font-mono mt-1">2021 – 2025</p>
+              
             </div>
             <div className="flex-shrink-0">
               <span className="tag">Undergraduate</span>
             </div>
-          </div>
+          </div>git add .
+git commit -m "added all projects"
+git push
         </div>
 
       </div>
